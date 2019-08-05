@@ -13,14 +13,14 @@ Installation
 You can install the released version of metcouncilR from [GitHub](https://github.com/) with:
 
 ``` r
-install.packages("devtools")
+#install.packages("devtools")
 devtools::install_github("katiejolly/metcouncilR")
 ```
 
 Example
 -------
 
-This is a basic example which shows you how to plot the trip duration in a histogram.
+This is a basic example which shows you how to plot the customer types in a bar plot.
 
 ``` r
 library(metcouncilR)
@@ -29,7 +29,7 @@ data("nice_ride_2018")
 
 # make a histogram of trip durations
 
-hist(nice_ride_2018$tripduration)
+barplot(table(nice_ride_2018$usertype), main="User Types in the MN Niceride System", xlab="")
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />

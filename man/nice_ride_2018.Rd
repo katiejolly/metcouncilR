@@ -36,7 +36,7 @@ or taken by staff servicing and inspecting the system.
 }
 \examples{
 data(nice_ride_2018)
-hist(nice_ride_2018$tripduration)
+barplot(table(nice_ride_2018$usertype), main="User Types in the MN Niceride System", xlab="")
 }
 \references{
 MN niceride https://www.niceridemn.com/system-data
