@@ -79,14 +79,14 @@ devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumen
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example which shows you how to plot the trip duration in a histogram.</p>
+<p>This is a basic example which shows you how to plot the customer types in a bar plot.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(metcouncilR)
 
 <span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(<span class="st">"nice_ride_2018"</span>)
 
 <span class="co"># make a histogram of trip durations</span>
 
-<span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/hist">hist</a></span>(nice_ride_<span class="dv">2018</span><span class="op">$</span>tripduration)</code></pre></div>
+<span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/barplot">barplot</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/table">table</a></span>(nice_ride_<span class="dv">2018</span><span class="op">$</span>usertype), <span class="dt">main=</span><span class="st">"User Types in the MN Niceride System"</span>, <span class="dt">xlab=</span><span class="st">""</span>)</code></pre></div>
 <p><img src="reference/figures/README-example-1.png" width="100%"></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/summary">summary</a></span>(nice_ride_<span class="dv">2018</span>)
 <span class="co">#&gt;   tripduration        start_time                 </span>
