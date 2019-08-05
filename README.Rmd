@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# metcouncilR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of metcouncilR is to make the data part easier during the Intro to R workshop. Eat your cake first!
+
+## Installation
+
+You can install the released version of metcouncilR from [GitHub](https://github.com/) with:
+
+``` r
+install.packages("devtools")
+devtools::install_github("katiejolly/metcouncilR")
+```
+
+## Example
+
+This is a basic example which shows you how to plot the trip duration in a histogram.
+
+```{r example}
+library(metcouncilR)
+
+data("nice_ride_2018")
+
+# make a histogram of trip durations
+
+hist(nice_ride_2018$tripduration)
+```
+
+
+
+```{r cars}
+summary(nice_ride_2018)
+```
+
+
