@@ -12,8 +12,8 @@
 #' @format A data frame with 412423 rows and 16 variables:
 #' \describe{
 #'   \item{tripduration}{length of trip, seconds}
-#'   \item{start_time}{start time and date}
-#'   \item{end_time}{end time and date}
+#'   \item{start_datetime}{start time and date}
+#'   \item{end_datetime}{end time and date}
 #'   \item{start_station_id}{none if dockless ride}
 #'   \item{start_station_name}{none if dockless ride}
 #'   \item{start_station_latitude}{}
