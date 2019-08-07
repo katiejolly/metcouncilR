@@ -1,7 +1,7 @@
 #' MN niceride trips in 2018
 #'
 #' Data from MN niceride in 2018 including one row for each trip excluding
-#' those less than one minute, trips to/from test stations at warehouses,
+#' those less than one minute and more than 5 hours, trips to/from test stations at warehouses,
 #' or taken by staff servicing and inspecting the system.
 #'
 #'
