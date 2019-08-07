@@ -36,7 +36,7 @@ barplot(table(nice_ride_2018$usertype), main="User Types in the MN Niceride Syst
 
 ``` r
 summary(nice_ride_2018)
-#>   tripduration        start_time                 
+#>   tripduration      start_datetime               
 #>  Min.   :      61   Min.   :2018-04-12 08:49:49  
 #>  1st Qu.:     434   1st Qu.:2018-06-08 15:49:25  
 #>  Median :     808   Median :2018-07-18 10:10:37  
@@ -44,7 +44,7 @@ summary(nice_ride_2018)
 #>  3rd Qu.:    1548   3rd Qu.:2018-08-27 22:36:27  
 #>  Max.   :11136253   Max.   :2018-11-17 23:51:45  
 #>                                                  
-#>     end_time                   start_station_id start_station_name
+#>   end_datetime                 start_station_id start_station_name
 #>  Min.   :2018-04-12 09:31:20   Min.   :  2.0    Length:412423     
 #>  1st Qu.:2018-06-08 16:27:45   1st Qu.: 37.0    Class :character  
 #>  Median :2018-07-18 10:56:49   Median : 94.0    Mode  :character  
@@ -76,12 +76,20 @@ summary(nice_ride_2018)
 #>  3rd Qu.:1627                      3rd Qu.:1986   3rd Qu.:1.0000  
 #>  Max.   :3341                      Max.   :2000   Max.   :2.0000  
 #>                                                                   
-#>   bike_type        
-#>  Length:412423     
-#>  Class :character  
-#>  Mode  :character  
-#>                    
-#>                    
-#>                    
-#> 
+#>   bike_type          start_month     start_day     end_month     
+#>  Length:412423      Min.   : 4.000   Sun:63672   Min.   : 4.000  
+#>  Class :character   1st Qu.: 6.000   Mon:52911   1st Qu.: 6.000  
+#>  Mode  :character   Median : 7.000   Tue:52012   Median : 7.000  
+#>                     Mean   : 7.103   Wed:57241   Mean   : 7.104  
+#>                     3rd Qu.: 8.000   Thu:58084   3rd Qu.: 8.000  
+#>                     Max.   :11.000   Fri:60978   Max.   :12.000  
+#>                                      Sat:67525                   
+#>  end_day       start_hour       end_hour    
+#>  Sun:64013   Min.   : 0.00   Min.   : 0.00  
+#>  Mon:53216   1st Qu.:11.00   1st Qu.:11.00  
+#>  Tue:51974   Median :15.00   Median :15.00  
+#>  Wed:57248   Mean   :14.26   Mean   :14.45  
+#>  Thu:58075   3rd Qu.:18.00   3rd Qu.:18.00  
+#>  Fri:60644   Max.   :23.00   Max.   :23.00  
+#>  Sat:67253
 ```
