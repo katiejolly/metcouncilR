@@ -40,3 +40,36 @@
 #' data(nice_ride_2018)
 #' barplot(table(nice_ride_2018$usertype), main="User Types in the MN Niceride System", xlab="")
 "nice_ride_2018"
+
+
+
+
+#' MN niceride trips in 2018
+#'
+#' Data from MN niceride in 2018 including one row for each trip excluding
+#' those less than one minute and more than 5 hours, trips to/from test stations at warehouses,
+#' or taken by staff servicing and inspecting the system.
+#'
+#'
+#' @docType data
+#'
+#' @usage data(nice_ride_2018)
+#'
+#' @format A data frame with 412423 rows and 16 variables:
+#' \describe{
+#'   \item{number}{station id}
+#'   \item{name}{station name}
+#'   \item{latitude}{}
+#'   \item{longitude}{}
+#'   \item{total_docks}{number of bike docks at each station}
+#'   }
+#'
+#'
+#' @keywords datasets
+#'
+#' @references MN niceride https://www.niceridemn.com/system-data
+#'
+#' @source \href{https://www.kaggle.com/brendanhasz/nice-ride-mn-2017/downloads/nice-ride-mn-2017.zip/2}{Nice Ride Minnesota 2017}
+#'
+
+"station_locations"
